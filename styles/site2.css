@@ -29,14 +29,24 @@ nav ul {
     margin-right: 45px;
 }
   
-  nav ul li:hover {
+nav ul li:hover {
     background-color: #ffbbbb5a;
     border-radius: 20px;
-  }
+}
+
+p {
+    font-size: 15pt;
+    line-height: 1; 
+}
+
+h2 {
+    font-size: 24pt;
+    margin: 0;
+}
 
 /* ------- index homepage ------ */
 html.index {
-    background-image: url('../images/Untitled-Artwork.png');
+    background-image: url('../images/black_home.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -61,6 +71,34 @@ html.index {
     font-size: 55pt;
 }
 
-.homepage_text p {
-    font-size: 16pt;
+/* ------- about page ------ */
+.michelle img {
+    display: flex;
+    border-radius: 25px; 
+    width: 350px; 
+    height: auto; 
+}
+
+.about_all {
+    display: flex;
+    flex-direction: row;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 40px;
+}
+
+.about_body {
+    display: flex;
+    flex-direction: column;
+    padding-left: 35px;
+}
+ 
+.all_links {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.all_links p {
+    margin: 0;
 }
