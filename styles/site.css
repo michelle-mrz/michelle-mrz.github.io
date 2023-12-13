@@ -1,0 +1,307 @@
+html {
+    background-color:white;
+}
+
+.homepic {
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    background: url('../images/Untitled-Artwork.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: white;
+    background-position: center bottom;
+    overflow: hidden; 
+}
+
+.hometext {
+    color: #467ccb;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%); /* Center the content */
+    text-align: center; /* Center the text within the container */
+    position: fixed;
+}
+
+.hometext h1,
+.hometext p {
+    margin: 0;
+}
+
+.hometext h1 {
+    font-size: 40pt;
+}
+
+nav {
+    color:black ;
+    display:flex;
+    flex-direction: row;
+    position:fixed;
+    z-index: 100;
+}
+
+nav ul {
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    /* margin-left: 800px; */
+    /* margin-right: 100px; */
+    /* padding-right: 100px; */
+    margin-top:23px;
+    /* margin-left: 970px; */
+    margin-left: 890px;
+    /* margin-left: 850px; */
+
+}
+
+nav li {
+    margin-right: 20px; /* Adjust the margin to your desired spacing */
+    white-space: nowrap;
+}
+
+nav li a{
+    font-size: 15px;
+    color: #467ccb;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    /* padding: 10px; */
+}
+
+h1 {
+    margin: 0;
+    color: #467ccb;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    padding-top: 33px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+h1:not(.hometext h1)::after {
+    content: ""; /* Add content to the pseudo-element (in this case, an empty string) */
+    display: block; /* Make the pseudo-element a block-level element */
+    width: 85%; /* Adjust the width of the line as needed */
+    height: 2px; /* Adjust the height (thickness) of the line as needed */
+    background-color: #467ccb; /* Choose the line color */
+    margin-top: 10px; /* Adjust the spacing between the heading and the line as needed */
+    position: absolute; /* Position the line relative to the heading */
+    left: 0; /* Position the line at the left edge of the heading */
+    bottom: -5px; /* Adjust the vertical position of the line (negative value moves it upwards) */
+    margin-left: 110px;
+    margin-right: 110px; 
+}
+
+p {
+    color: #467ccb;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    font-size: 12pt;
+}
+
+.michelle img {
+    display: flex;
+    border-radius: 25px; /* Make the border round by setting a radius of 50% */
+    width: 350px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio of the image */
+}
+
+.about_body {
+    display: flex;
+    flex-direction: column;
+    padding-left: 35px;
+}
+
+.about_all {
+    display: flex;
+    flex-direction: row;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 35px;
+}
+
+.shiny_gif {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.frog_gifs {
+    display: flex;
+    flex-direction:row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fishies{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.emoji {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 30pt;
+}
+
+.bottom_img {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+/* Style the image container within the project */
+.project .image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Style the project images within the project */
+.project img {
+    width: 580px; /* Adjust the width as needed */
+    height: auto; /* Ensure the image maintains its aspect ratio */
+    transition: transform 0.3s; /* Add smooth hover transition */
+}
+
+/* Style the overlay for the image */
+.project .image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 580px; /* Set overlay width to match image width */
+    height: 100%; /* Set overlay height to 100% */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+    display: flex;
+    flex-direction: column;
+    /* justify-content:flex-end;
+    align-items: center; */
+    opacity: 0; /* Initially, the overlay is hidden */
+    transition: opacity 0.3s; /* Add smooth transition for overlay */
+}
+
+/* Style the text inside the overlay */
+.project .image-container .overlay p {
+    color: #fff; /* Text color */
+    /* font-size: 18px; */
+    text-align: left;
+    z-index: 1; /* Place the text above the image */
+    position: relative;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    font-size: 25pt;
+}
+
+/* Show the overlay on hover of the image */
+.project .image-container:hover .overlay {
+    opacity: 1;
+}
+
+.first_projs, .second_projs{
+    display: flex;
+    flex-direction: row;
+}
+
+.language {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.proj_name {
+    margin-top:280px;
+    margin-left: 40px;
+}
+
+.allprojects {
+    display: flex;
+    flex-direction: column;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 35px;
+}
+
+.digital_all img {
+    width:312px;
+    padding-right: 5px;
+}
+
+.physical_all .first img {
+    height:341px;
+    padding-right: 5px;
+}
+
+.physical_all .second img {
+    height:355px;
+    padding-right: 5px;
+}
+
+.digital_section {
+    display: flex;
+    flex-direction: row;
+    /* padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 35px; */
+}
+
+.physical_section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+}
+
+.first, .second, .third {
+    display: flex;
+    flex-direction: row;
+}
+
+.digital_all {
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 110px; */
+}
+
+.digital_title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-right: 80px;
+}
+
+.physical_title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 51.5px;
+    margin-right: 71.5px;
+}
+
+.art_title p {
+    font-size: 20pt;
+    margin:0;
+}
+
+.all_art {
+    display: flex;
+    flex-direction: column;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 35px;
+}
+
+
+
+
+
+
+
+
+

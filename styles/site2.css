@@ -1,0 +1,66 @@
+/* ------- general stuff ------ */
+@import url('https://fonts.googleapis.com/css2?family=Afacad&display=swap');
+
+html {
+    background-color:white;
+    font-family: 'Afacad', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li a {
+    color:black;
+    font-size: 14pt;
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0px;
+    padding: 16px 16px;
+    font-size: 18px;
+}
+
+nav ul {
+    margin-right: 45px;
+}
+  
+  nav ul li:hover {
+    background-color: #ffbbbb5a;
+    border-radius: 20px;
+  }
+
+/* ------- index homepage ------ */
+html.index {
+    background-image: url('../images/Untitled-Artwork.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.homepage_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding-top: 29vh;
+}
+
+.homepage_text p, .homepage_text h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    line-height: .9; 
+}
+
+.homepage_text h1 {
+    font-size: 55pt;
+}
+
+.homepage_text p {
+    font-size: 16pt;
+}
